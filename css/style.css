@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    font-size: calc(60% + 0.8vmin);
+}
+img{
+    width: 30rem;
+}
+header{
+    background-image: url(img/Wallpaper.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.Title{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.Title h1{
+    font-size: 30px;
+}
+.Title h2{
+    font-size: 70px;
+}
+.Title h3{
+    font-size: 20px;
+    position: absolute;
+    top: 150%;
+}
