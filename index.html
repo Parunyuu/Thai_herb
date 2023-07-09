@@ -19,9 +19,16 @@
 
     <section class="Info">
 
-        <div class="Info-cause" id="Caus">
-            <p id = "cause"class="cause">เหตุเติบโตช้า เมื่อใช้ต้องใช้ทั้งต้น หรือทั้งราก หรือใช้บ่อยจึงรักษาได้</p>
+        <div class="Info-cause" >
+            <p class="cause" id="Caus">เหตุเติบโตช้า เมื่อใช้ต้องใช้ทั้งต้น หรือทั้งราก หรือใช้บ่อยจึงรักษาได้</p>
             <p id = "dicname"class="name">นายนันทศักดิ์ โชติชนะเดชาวงศ์ ผู้อำนวยการกองคุ้มครองภูมิปัญญาการแพทย์แผนไทยและพื้นบ้านไทย กรมพัฒนาการแพทย์แผนไทยและการแพทย์ทางเลือก กระทรวงสาธารณสุข (สธ.) กล่าว</p>
+        </div>
+
+        <div class="ExHerbTopic" id="ExHerbinfo">
+            <p>คณะกรรมการคุ้มครองและส่งเสริมภูมิปัญญาการแพทย์แผนไทยได้ประชุมหารือกัน โดยเลือกสมุนไพร 6 ชนิดจาก 22 ชนิดขึ้นมา
+                 นอกจากนี้ ยังเสนอสมุนไพร “กระวาน” ขึ้นมาเป็นพิเศษด้วยอีกชนิดหนึ่งพื่อประกาศคุ้มครองและเป็นสมุนไพรที่ต้องควบคุม </p>
+            <p>โดยหากใครมีสมุนไพร 7 ตัวนี้อยู่ในครอบครองไม่ได้ถือว่ามีความผิด </p>
+            <p>เพียงแต่ต้องแจ้งมาทาง สธ. ให้รับทราบว่ามีอยู่เท่าใด เพื่อที่จะจัดทำแผนส่งเสริมการปลูกต่อไป เช่น บริษัทใดมีสมุนไพร 7 นี้อยู่ ใช้ผลิตยาไปเท่าใด ต้องปลูกทดแทนเท่าใด เพื่อไม่ให้สูญพันธุ์</p>
         </div>
 
         <div class="wrapper" >
@@ -205,10 +212,13 @@
 
     function changetext() {
       var button = document.getElementById("textButton");
+      var info = document.getElementById("ExHerbinfo");
       console.log(button.textContent);
       if (button.textContent == "READ MORE") {
+        info.style.display = "block";
         button.textContent = "Go Back";
       } else{
+        info.style.display = "none";
         button.textContent = "READ MORE";
       }
     }
