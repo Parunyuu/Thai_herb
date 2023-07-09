@@ -116,6 +116,66 @@ img{
     width: 90%;
     font-size: 0.7rem;
 }
+.wrapper{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+.link_wrapper{
+    position: relative;
+}
+a{
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+}
+  
+.icon{
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+}
+  
+.icon svg{
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #2ecc71;
+    transition: all .35s;
+}
+
+a:hover{
+    width: 200px;
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: #2ecc71;
+}
+  
+ a:hover + .icon{
+    border: 3px solid #2ecc71;
+    right: -25%;
+}
+
 
 .herb-info{
     position: relative;
@@ -149,11 +209,11 @@ img{
 }
 .herb img{
     /* border: 1px solid #000000; */
-    /* border-radius: 10px; */
+    border-radius: 10px;
     /* border-style: initial; */
     padding: 5px;
     width: 150px;
-    width: 60%;
+    width: 70%;
     height: 85%;
     size: 10px;
     transition: width 2s, height 2s ease-in-out;
@@ -170,19 +230,17 @@ img{
     padding: 5px;
 }
 .herb-name{
-    border-color: #000000;
+    border-color: #ffffff;
     border-style: solid;
-    border-radius: 30px;
     background-color: #ffffff;
 }
 .herb-name h1{
     position: relative;
     top: 40px;
-    left: 25%;
     height: 80px;
     font-size: 1.5rem;
     text-align: center;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         -225deg,
         #970000 0%,
         #b6a619 29%,
@@ -194,11 +252,11 @@ img{
       background-size: 200% auto;
       color: #000000;
       background-clip: text;
-      /* text-fill-color: transparent; */
+      text-fill-color: transparent;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: textclip 2s linear infinite;
-      display: inline-block;
+      display: inline-block; */
     
 }
 .herb-name p{
@@ -212,7 +270,8 @@ img{
 
 .all-herb{
     position: relative;
-    background-image: linear-gradient(rgb(237, 243, 186), rgb(255, 255, 255));
+    height: 200vh;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
 
 }
 .toggle-switch::hover ~ .herb-name p{
