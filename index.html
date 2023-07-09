@@ -28,43 +28,45 @@
     <div class="all-herb">
         <div class="herb-name">
             <h1> รายชื่อสมุนไพรไทย 22 ชนิด ที่เสี่ยงอาจจะสูญพันธุ์ </h1>
+            <p>กดเพื่อเลือกดู 7 สมุนไพรไทย ที่ประกาศคุ้มครองและควบคุม</p>
         </div>
         
-        <input type="checkbox" class="toggle-switch">
+        <input type="checkbox" class="toggle-switch" id="myCheckbox" onchange="toggleCheck()">
 
         <section class="herb-info">
             <div class="herb">
-                <img class="exherb" src="https://lh3.googleusercontent.com/-IfUGdZv6L-A/XFLX4g2aECI/AAAAAAAAG2c/yhn0JaZDG7Eo4i3tlbXLes4_xIofTle3QCHMYCw/s280/%255BUNSET%255D" alt="">
+                <!-- <img class="herb" src="https://lh3.googleusercontent.com/-IfUGdZv6L-A/XFLX4g2aECI/AAAAAAAAG2c/yhn0JaZDG7Eo4i3tlbXLes4_xIofTle3QCHMYCw/s280/%255BUNSET%255D" alt=""> -->
+                <img class="exherb" id="exherb" src="https://lh3.googleusercontent.com/-IfUGdZv6L-A/XFLX4g2aECI/AAAAAAAAG2c/yhn0JaZDG7Eo4i3tlbXLes4_xIofTle3QCHMYCw/s280/%255BUNSET%255D" alt="">
                 <p>
                     ถั่วดินโคก
                 </p>
             </div>
             <div class="herb">
-                <img src="https://www.disthai.com/images/content/original-1650683428621.jpg" alt="">
+                <img class="exherb" id="exherb" src="https://www.disthai.com/images/content/original-1650683428621.jpg" alt="">
                 <p>
                     เทพทาโร
                 </p>
             </div>
             <div class="herb">
-                <img src="https://www.matichonweekly.com/wp-content/uploads/2017/01/4%E0%B8%A1%E0%B8%B0%E0%B8%95%E0%B8%B9%E0%B8%A11.jpg" alt="">
+                <img class="exherb" id="exherb" src="https://www.matichonweekly.com/wp-content/uploads/2017/01/4%E0%B8%A1%E0%B8%B0%E0%B8%95%E0%B8%B9%E0%B8%A11.jpg" alt="">
                 <p>
                     มะตูมนิ่ม
                 </p>
             </div>
             <div class="herb">
-                <img src="https://www.bloggang.com/data/g/goirish2011/picture/1364000587.jpg" alt="">
+                <img class="exherb" id="exherb" src="https://www.bloggang.com/data/g/goirish2011/picture/1364000587.jpg" alt="">
                 <p>
                     มะหาด
                 </p>
             </div>
             <div class="herb">
-                <img src="https://apps.phar.ubu.ac.th/thaicrudedrug/userfiles/image/tcd117_Rew/tcd117_02.JPG" alt="">
+                <img class="exherb" id="exherb" src="https://apps.phar.ubu.ac.th/thaicrudedrug/userfiles/image/tcd117_Rew/tcd117_02.JPG" alt="">
                 <p>
                     เร่ว
                 </p>
             </div>
             <div class="herb">
-                <img src="https://thai-herbs.thdata.co/mydear_cover/thdata_%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%A3%E0%B8%B91.jpg" alt="">
+                <img class="exherb" id="exherb" src="https://thai-herbs.thdata.co/mydear_cover/thdata_%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%A3%E0%B8%B91.jpg" alt="">
                 <p>
                     หัวร้อยรู
                 </p>
@@ -165,11 +167,14 @@
                     เปราะหอม
                 </p>
             </div>
+            <div class="herb">
+                <img class="exherb" id="otherherb" src="https://www.disthai.com/images/content/original-1634717405575.jpg" alt="">
+                <p id="otherherbtext">
+                    กระวาน
+                </p>
+            </div>
         </section>
     </div>
-
-
-    
 
 </body>
 

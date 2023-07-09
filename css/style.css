@@ -110,8 +110,8 @@ img{
 }
 .name{
     color: rgb(247, 247, 247);
-    position: relative;
-    top: 100px;
+    position: absolute;
+    top: 200%;
     right: 0%;
     width: 90%;
     font-size: 0.7rem;
@@ -148,8 +148,9 @@ img{
     }
 }
 .herb img{
-    border: 1px solid #000000;
-    border-radius: 10px;
+    /* border: 1px solid #000000; */
+    /* border-radius: 10px; */
+    /* border-style: initial; */
     padding: 5px;
     width: 150px;
     width: 60%;
@@ -160,7 +161,7 @@ img{
 .herb img:hover   {
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    box-shadow: 0 0 2px 2px rgba(95, 95, 95, 0.5);
   }
 .herb{
     text-align: center;
@@ -168,19 +169,25 @@ img{
     margin: 10px;
     padding: 5px;
 }
+.herb-name{
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 30px;
+    background-color: #ffffff;
+}
 .herb-name h1{
     position: relative;
     top: 40px;
-    left: 15%;
-    height: 50px;
+    left: 25%;
+    height: 80px;
     font-size: 1.5rem;
     text-align: center;
     background-image: linear-gradient(
         -225deg,
-        #771e1e 0%,
-        #9c8f18 29%,
-        #439600 67%,
-        #00065e 110%
+        #970000 0%,
+        #b6a619 29%,
+        #5faf1d 67%,
+        #000a92 110%
     );
       background-size: auto auto;
       background-clip: border-box;
@@ -194,11 +201,22 @@ img{
       display: inline-block;
     
 }
+.herb-name p{
+    position: relative;
+    top: 80px;
+    height: 50px;
+    font-size: 1rem;
+    text-align: left;
+    left: 5%;
+}
 
 .all-herb{
     position: relative;
     background-image: linear-gradient(rgb(237, 243, 186), rgb(255, 255, 255));
 
+}
+.toggle-switch::hover ~ .herb-name p{
+    font-size: 2rem;
 }
 input[type=checkbox].toggle-switch {
     font-size: 10px;
@@ -213,8 +231,8 @@ input[type=checkbox].toggle-switch {
     cursor: pointer;
     transition: background-color 0.09s ease-in-out;
     position: relative;
-    left: 80%;
-    bottom:10px;
+    left: 50%;
+    top: 30px;
 }
 
 input[type=checkbox].toggle-switch:checked {
@@ -238,4 +256,26 @@ input[type=checkbox].toggle-switch::after {
 input[type=checkbox].toggle-switch:checked::after {
     left: 4em;
     
+}
+
+.exherb {
+    border: none;
+    transition: border-color 0.3s ease-in-out;
+}
+  
+.toggle-switch:checked ~ .herb-info .exherb {
+    border: 5px solid #f80000;
+    border-radius: 10px;
+}
+.toggle-switch:checked ~ .herb-info #otherherb {
+    opacity: 1; 
+}
+.toggle-switch:checked ~ .herb-info #otherherbtext {
+    opacity: 1; 
+}
+#otherherb {
+    opacity: 0;
+}
+#otherherbtext{
+    opacity: 0;
 }
